@@ -1,0 +1,14 @@
+<h1 class="mb-5">Posts</h1>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <div class="col-6 shadow rounded p-5">
+      <%= render post %>
+    </div><br>
+    <p>
+      <%= link_to "Show this post", post %>| |
+      <%= link_to "New post", new_post_path %>
+    </p>
+  <% end %>
+</div>
+<br>
